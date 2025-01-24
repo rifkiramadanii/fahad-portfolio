@@ -1,0 +1,738 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F2FF;
+    width: 100%;
+    height: 13132px;
+    overflow-x: hidden;
+}
+/* Header */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-width: 800px;
+    height: Hug (78px)px;
+    padding: 12px 68px 12px 68px;
+    gap: 0px;    
+    justify-content: space-between;
+    align-items: center;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    /* padding: 20px 50px; */
+    background-color: white;
+    box-shadow: 0px 4px 12px 0px #0000003D;
+    top: 0;
+    z-index: 10;
+}
+.navbar img {
+    padding-left: 10vh;
+    height: 50px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10vh;
+    padding-right: 70px;
+    width: 327px;
+    height: 25px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.navbar ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
+.navbar ul li a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+.navbar ul li a:hover{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+/* Alterra-Hero */
+.alterra-hero {
+    position: absolute;
+    width: 100%;
+    height: 802px;
+    top: 78px;
+    gap: 0px;
+    opacity: 0px;    
+    background-color: #CBBDFF;
+}
+
+.project-img {
+    position: absolute;
+    top: 275px;
+    left: 72px;    
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+#project-mg {
+    animation-timing-function: ease;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-desc {
+    position: absolute;
+    width: 515px;
+    height: 164px;
+    top: 491px;
+    left: 92px;    
+}
+
+.alterra-hero .text-desc h2 {
+    color: #292439;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.alterra-hero .text-desc h3 {
+    color: #53387D;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+} 
+
+.alterra-hero .text-desc p {
+    color: #53387D;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.alterra-bg {
+    position: relative;
+    width: 957px;
+    height: 1,276px;
+    /* top: 0px;
+    left: 45%; */
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+#alterra-bg {
+    animation-timing-function: ease;
+}
+.alterra-bg:hover {
+    transform: scale(1.01)translateY(-2px);
+    transition: .2s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        top: 0;
+        left: 100%;
+    }
+    to {
+        top: 0;
+        left: 5%;
+    }
+}
+
+.project-detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 803px;
+    left: -71px;
+    width: 100%;
+}
+.project-img-2 {
+    position: absolute;
+    top: 104px;
+    left: 98px;
+}
+
+.project-detail h1 span {
+    color: #53387D;
+    position: absolute;
+    width: 310px;
+    height: 75px;
+    top: 134px;
+    left: 98px;  
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.88px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;          
+}
+.details {
+    position: absolute;
+    top: 194px;
+    left: 98px;
+    width: 80%;
+}
+.details p {
+    font-family: Roboto;
+    color: #292439;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    width: 971px;   
+}
+
+.details p:nth-child(1) span {
+    color: #292439;
+    line-height: 38px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.details p:nth-child(2) {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.details h2 span {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #53387D;    
+    line-height: 43px;
+}
+.details p:nth-child(3) {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    width: 1302px;    
+}
+.problem-state {
+    position: absolute;
+    top: 550px;
+    left: 98px;
+}
+
+.problem-state h2 span {
+    color: #53387D;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.problem-state-1 {
+    position: absolute;
+    top: 700px;
+    left: 98px;
+}
+
+.problem-state-1 h2 span {
+    color: #53387D;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.problem-state p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    color: #292439;   
+}
+.problem-state-1 p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    color: #292439;   
+}
+.vector-1 {
+    position: absolute;
+    width: 444px;
+    height: 379px;
+    top: 0;
+    right: -15%;
+    z-index: -1;
+}
+.redesign-reason {
+    position: absolute;
+    top: 890px;
+    left: 98px;
+    align-self: center;
+    justify-self: center;
+}
+.redesign-expl {
+    width: 1302px;
+    height: 200px;
+}
+.redesign-expl p {
+    color: #292439;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+/* Process */
+.design-process {
+    position: relative;
+    width: 100%;
+    height: 3863px;
+    top: 2690px;
+}
+.vector-2 {
+    position: absolute;
+    left: 0px;
+}
+.vector-3 {
+    position: absolute;
+    top: 1745px; 
+    left: 0px;
+}
+
+.vector-4 {
+    position: absolute;
+    top: 1965px;
+    right: 0;
+}
+.first-step {
+    position: absolute;
+    top: 80px;
+    left: 38px;
+    width: 1302px;
+}
+.design-process-think {
+    width: 1302px;
+}
+.design-process-think h2 {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #53387D;
+}
+.design-process-think p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;  
+    color: #292439;  
+}
+.design-process-think img {
+    transform: translate(50%);
+}
+/* Problem */
+.problem {
+    position: absolute;
+    width: 1302px;
+    height: 111px;
+    top: 3305px;
+    left: 38px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.problem h2 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #53387D;    
+}
+.problem p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #292439;
+}
+.problem ol li {
+    padding-left: 0px;
+    margin-left: -18px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #292439;
+}
+.problem ol li h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #292439;
+}
+
+.img-problem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+/* Ideate */
+
+.ideate {
+    position: absolute;
+    width: 1302px;
+    height: 139px;
+    top: 4850px;
+    left: 38px;    
+}
+.ideate h2 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #53387D;
+}
+.ideate p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #292439;    
+}
+.ideate-list ol li{
+    padding-left: 0px;
+    margin-left: -18px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #292439;
+}
+.ideate-list ol li h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #292439;   
+}
+
+/* logo-font-color */
+.ornament-3 {
+    position: absolute;
+    top: 6px;
+    left: 39%;
+    z-index: -1;
+}
+
+/* wireframe */
+.wireframe {
+    position: absolute;
+    top: 5504px;
+    width: 100%;
+}
+
+.wf-expl {
+    width: 1302px;
+    height: 139px;
+    padding-top: 80px;
+    padding-left: 38px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.wf-expl h2 {
+    color: #53387D;
+    font-size: 36px;
+    font-weight: 600;
+}
+.wf-expl p {
+    color: #292439;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.wf-img {
+    width: 1150px;
+    padding-top: 50px;
+    padding-left: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.wf-list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.wf-list h3 {
+    color: #53387D;
+    font-size: 32px;
+    font-weight: 700;
+    justify-self: center;
+}
+
+.wireframe-ornament {
+    position: absolute;
+    top: 5695px;
+    left: 0;
+}
+.wireframe-ornament-2 {
+    position: absolute;
+    top: 6604px;
+    left: 58%;
+    z-index: -1;
+}
+.wireframe-vector {
+    position: absolute;
+    top: 7895px;
+    right: 0px;
+    z-index: -1;
+}
+
+.design-app-ornament {
+    position: absolute;
+    top: 7995px;
+    left: 0;
+}
+/* high fidelity */
+.hf {
+    position: absolute;
+    top: 8200px;
+    width: 100%;
+}
+.title h2 {
+    padding-left: 68px;
+    color: #53387D;
+    font-size: 48px;
+    font-weight: 600;
+}
+.hf-list {
+    padding-left: 38px;
+    width: 1304px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+.hf-list div {
+    flex-direction: column;
+    gap: 10px;
+}
+.hf-list h3 {
+    color: #53387D;
+    font-size: 32px;
+    font-weight: 700;
+    justify-self: center;
+}
+
+.design-app-ornament-2 {
+    position: absolute;
+    top: 12170px;
+    right: 0;
+    z-index: -1;
+}
+.design-app-vector-1 {
+    position: absolute;
+    top: 12100px;
+    left: 0;
+    z-index: -1;
+}
+
+.what-did-i-learn {
+    position: absolute;
+    top: 12400px;
+    left: 10%;
+    width: 1101px;
+    height: 243px;
+    text-align: center;
+}
+.what-did-i-learn h2 {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56.25px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #53387D;
+}
+.what-did-i-learn p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #292439;
+}
+/* Footer */
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0px;
+    top: 12800px;
+    background-color: #DDE0FF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 288px;
+    gap: 20px;
+    opacity: 0px;
+}
+
+.contact-info {
+    margin-left: 10vh;
+    display: flex;
+    align-items: center;
+    width: Hug (657px)px;
+    height: Hug (142px)px;
+    top: 30px;
+    left: 68px;
+    gap: 58px;
+    opacity: 0px;
+    
+}
+
+.contact-info img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-details {
+    line-height: 1.6;
+}
+
+.contact-details h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-details p i{
+    gap: 5px;
+    row-gap: 5px;
+}
+
+.social-media {
+    position: absolute;
+    text-align: right;
+    width: Fixed (153px)px;
+    height: Hug (52px)px;
+    top: 100px;
+    right: 239px;
+    gap: 20px;
+    opacity: 0px;    
+}
+
+.social-media p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.social-icons {
+    border: none;
+    padding-top: 10px;
+}
+.social-media a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    width: Hug (120px)px;
+    height: Hug (24px)px;
+    gap: 24px;
+    opacity: 0px;
+    
+}
+
+.footer .copyright {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0ff;
+    font-size: 14px;
+}

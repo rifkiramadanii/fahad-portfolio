@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F2FF;
+    width: 100%;
+    max-height: 1100px;
+    overflow-x: hidden;
+}
+/* Header */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-width: 800px;
+    height: Hug (78px)px;
+    padding: 12px 68px 12px 68px;
+    gap: 0px;    
+    justify-content: space-between;
+    align-items: center;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    /* padding: 20px 50px; */
+    background-color: white;
+    box-shadow: 0px 4px 12px 0px #0000003D;
+    top: 0;
+    z-index: 10;
+}
+.navbar img {
+    padding-left: 10vh;
+    height: 50px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10vh;
+    padding-right: 70px;
+    width: 327px;
+    height: 25px;
+    gap: 0px;
+    opacity: 0px;    
+}
+.navbar ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
+.navbar ul li a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+.navbar ul li a:hover{
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+
+/* Content */
+.ornament {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 120px;
+    right: -1%;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.my-project {
+    position: absolute;
+    width: Fixed (312px)px;
+    height: Hug (80px)px;
+    top: 106px;
+    left: 68px;
+    gap: 24px;
+    opacity: 0px;   
+    margin-bottom: 30px; 
+}
+.my-project h1 {
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.69px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.my-project h1 span {
+    color: #007bff;
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32.69px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.my-project ul {
+    position: absolute;
+    width: 312px;
+    height: 23px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.my-project ul li {
+    opacity: 0px;
+    list-style: none;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.my-project ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.my-project ul li.active {
+    color: #0082CB;
+    border-bottom: 1px solid #0082CB;
+}
+
+.project {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 992px;
+    height: 415px;
+    top: 234px;
+    left: 68px;
+    gap: 62px;
+    opacity: 0px;
+    padding-top: 50px;    
+}
+
+.project-list {
+    width: 296px;
+    height: 415px;
+    padding: 0px 0px 18px 0px;
+    border-radius: 24px 0px 24px 0px;
+    opacity: 0px;    
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 12px 0px #00000024;
+}
+
+.project-list:hover {
+    transition: .2s ease-in-out;
+    transform: scale(1.1)translateY(1px);
+}
+
+.description {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 266px;
+    height: 127px;
+    gap: 18px;
+    opacity: 0px;    
+}
+
+.description h3 {
+    width: 266px;
+    height: 9px;
+    gap: 7px;
+    opacity: 0px;    
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.72px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0043CB;
+}
+
+.description h1 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.44px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.description p {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 266px;
+    height: 27px;
+    gap: 0px;
+    opacity: 0px;        
+}
+
+.project-list .project-image {
+    width: 296px;
+    height: 252px;
+    border-radius: 24px 0px 24px 0px;
+}
+
+.project-list:nth-child(1) .project-image {
+    background-color: #B88E2F;
+}
+
+.project-list:nth-child(2) .project-image {
+    background-color: #A48CF3;
+}
+
+.project-list:nth-child(3) .project-image {
+    background-color: #7E9EDD;
+}
+
+.project-image img{
+    width: 258px;
+    height: 208px;
+    padding-top: 22px;
+    padding-left: 19px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.details-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    bottom: 0;
+    width: 85px;
+    height: 25px;
+    border-radius: 6px;
+    border-style: none;
+    opacity: 0px;
+    background-color: #0082CB; 
+    cursor: pointer;  
+}
+.details-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    align-self: center;
+}
+.details-button:not(#details){
+    cursor: not-allowed;
+}
+
+.interest {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: #DDDDDD;
+    width: 90%;
+    height: 103px;
+    top: 750px;
+    left: 5%;
+    gap: 0px;
+    border-radius: 12px;
+    opacity: 0px;    
+}
+
+.fill h3 {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+
+.fill h3 span {
+    color: #0043CB;
+}
+
+.ornament6 {
+    position: absolute;
+    width: 566px;
+    height: 43.16px;
+    top: 30px;
+    left:40%;
+    gap: 0px;
+    border: 4px;
+    opacity: 0px;       
+}
+
+.interest .button{
+    position: relative;
+    top: 30px;
+    left: 80%;
+    color: white;
+    width: 188px;
+    height: 38px;
+    gap: 0px;
+    border-radius: 12px;
+    border-style: none;
+    opacity: 0px;
+    background: #FD7D00;
+    cursor: pointer;
+}
+
+.interest .button:hover {
+    background: #ca6500;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0px;
+    top: 900px;
+    background-color: #DDE0FF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 288px;
+    gap: 20px;
+    opacity: 0px;
+}
+
+.contact-info {
+    margin-left: 10vh;
+    display: flex;
+    align-items: center;
+    width: Hug (657px)px;
+    height: Hug (142px)px;
+    top: 30px;
+    left: 68px;
+    gap: 58px;
+    opacity: 0px;
+    
+}
+
+.contact-info img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-details {
+    line-height: 1.6;
+}
+
+.contact-details h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.contact-details p i{
+    gap: 5px;
+    row-gap: 5px;
+}
+
+.social-media {
+    position: absolute;
+    text-align: right;
+    width: Fixed (153px)px;
+    height: Hug (52px)px;
+    top: 100px;
+    right: 239px;
+    gap: 20px;
+    opacity: 0px;    
+}
+
+.social-media p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.social-icons {
+    border: none;
+    padding-top: 10px;
+}
+.social-media a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    width: Hug (120px)px;
+    height: Hug (24px)px;
+    gap: 24px;
+    opacity: 0px;
+    
+}
+
+.footer .copyright {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e0e0ff;
+    font-size: 14px;
+}
+
